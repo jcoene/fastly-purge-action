@@ -1,0 +1,10 @@
+name: 'Fastly Purge'
+description: 'Sends a request to purge all content for a Fastly service'
+inputs:
+  api_key:
+    description: Fastly API key
+  service_id:
+    description: Fastly Service ID
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

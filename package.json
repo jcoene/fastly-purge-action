@@ -1,0 +1,30 @@
+{
+  "name": "fastly-purge-action",
+  "version": "1.0.0",
+  "description": "GitHub Action to purge the cache for a Fastly Service",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build src/index.ts -o dist",
+    "test": "prettier -l 'src/**/*.ts'"
+  },
+  "prettier": {
+    "arrowParens": "avoid",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": true,
+    "printWidth": 140,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "parser": "babel-ts"
+  },
+  "author": "Jason Coene",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.2.7",
+    "@actions/http-client": "^1.0.11"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.28.3",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.4"
+  }
+}
