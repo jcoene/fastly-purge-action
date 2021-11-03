@@ -18,7 +18,9 @@ None
 
 ## Example usage
 
+```yaml
 uses: jcoene/fastly-purge-action@master
 with:
   api_key: "${{ secrets.FASTLY_API_KEY }}"
   service_id: "XzF8SR2rqdS5dQq6D6dz4G"
+```
